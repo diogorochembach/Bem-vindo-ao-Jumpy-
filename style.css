@@ -51,6 +51,36 @@ input {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     border: none;
+    outline: none;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.input span.error {
+    display: flex;
+    padding: 0;
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
 }
 
 input::placeholder {

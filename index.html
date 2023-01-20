@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
     <link href=" https://fonts.cdnfonts.com/css/helvetica-neue-9 " rel="stylesheet">
-    <script src="./script.js"></script>
+
     <title> Bem vindo ao Jumpy! </title>
 </head>
 
@@ -19,29 +19,46 @@
         <img id="logo-dnc" src="./assets/Logo-DNC.png" alt="Logotipo escola DNC">
         <p><img id="logo-jumpy" src="./assets/logo-jumpy.png" alt="Logotipo Jumpy"></p>
     </header>
-    
+
     <h2 id="bem-vindo"> Bem vindo ao Jumpy! </h2>
-    
+
     <div class="formulario">
         <form action="">
-            <label for="">Nome Completo:</label>
-            <input placeholder="Nome completo" type="text">
+            <div class="input">
+                <label for="">Nome Completo:</label>
+                <input placeholder="Nome completo" type="text" required>
+                <span class="error"></span>
+            </div>
 
-            <label for="">Email:</label>
-            <input placeholder="Email@email.com" type="email" name="EMAIL" id="">
+            <div class="input">
+                <label for="">Email:</label>
+                <input placeholder="Email@email.com" type="email" name="EMAIL" id="" required>
+                <span class="error"></span>
+            </div>
 
-            <label for="">Telefone:</label>
-            <input placeholder="(00) 000000-0000" type="tel" name="TELEFONE" id="">
+            <div class="input">
+                <label for="">Telefone:</label>
+                <input placeholder="(00) 000000-0000" type="tel" name="TELEFONE" id="" required>
+                <span class="error"></span>
+            </div>
 
-            <label for="">CPF:</label>
-            <input placeholder="000.000.000-00" type="number" name="CPF" id="">
+            <div class="input">
+                <label for="">CPF:</label>
+                <input placeholder="000.000.000-00" type="number" name="CPF" id="" required>
+                <span class="error"></span>
+            </div>
 
-            <label for="">Senha:</label>
-            <input placeholder="*******************" type="password" name="SENHA" id="">
+            <div class="input">
+                <label for="">Senha:</label>
+                <input placeholder="*******************" type="password" name="SENHA" id="" required>
+                <span class="error"></span>
+            </div>
 
             <button type="submit">Cadastrar</button>
+        
         </form>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
